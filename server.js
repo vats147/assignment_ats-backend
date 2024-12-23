@@ -20,6 +20,11 @@ app.use(cors());
 app.use('/api/auth', authRoutes);
 app.use('/api/schools', schoolRoutes);
 
+//for check status
+app.get('/api/status',(req,res)=>{
+    res.json({status: "API is up and running"})
+})
+
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
