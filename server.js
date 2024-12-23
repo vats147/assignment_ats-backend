@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Routes
+app.use('/api/status',res.send({message:"Hello there"}));
 app.use('/api/auth', authRoutes);
 app.use('/api/schools', schoolRoutes);
 
