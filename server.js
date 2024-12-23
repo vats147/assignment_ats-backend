@@ -7,7 +7,7 @@ const schoolRoutes = require('./routes/schools');
 
 const app = express();
 const PORT = 3002;
-const DB_URI = 'mongodb://localhost:27017/multiTenantDB';
+const DB_URI = 'mongodb+srv://senil_viradiya:Senil123@senil.oy4qh.mongodb.net/?retryWrites=true&w=majority&appName=Senil/multiTenantDB';
 
 mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB'))
